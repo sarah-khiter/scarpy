@@ -1,0 +1,23 @@
+Content-Length: 0
+Last-Modified: Thu, 31 Jul 2025 10:31:29 GMT
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=UTF-8
+X-Request-Id: a34c17d3db03cf51ead9f7855ca5d9a7
+X-Envoy-Upstream-Service-Time: 22
+Location: https://leagueoflegends.fandom.com/wiki/Rune_(League_of_Legends)
+X-Datacenter: RES
+X-Redirected-By: CanonicalRedirect
+X-Mobile-App: 0
+X-Ssexp: other
+X-Cacheable: YES
+Accept-Ranges: bytes
+Age: 885
+Date: Thu, 31 Jul 2025 10:46:14 GMT
+X-Served-By: cache-iad-kiad7000137-IAD, cache-iad-kiad7000137-IAD, cache-par-lfpg1960078-PAR
+X-Cache: MISS, HIT, MISS
+X-Cache-Hits: 0, 1, 0
+X-Timer: S1753958775.822459,VS0,VE84
+Vary: Accept-Encoding, X-Mobile-App, X-Ssexp, Cookie
+Strict-Transport-Security: max-age=300; includeSubDomains
+Server-Timing: dc;desc="res", roaa;desc="active", roaadc;desc="res", roaareason;desc="read_closest", roaavariant;desc="none"
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate

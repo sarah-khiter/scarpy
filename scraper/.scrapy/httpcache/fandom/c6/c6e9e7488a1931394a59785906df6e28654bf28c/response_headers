@@ -1,0 +1,23 @@
+Content-Length: 0
+X-Datacenter: RES
+Content-Type: text/html; charset=UTF-8
+X-Request-Id: de5a67b459b1ef6e7d32007bd39620a8
+X-Envoy-Upstream-Service-Time: 24
+X-Redirected-By: CanonicalRedirect
+X-Content-Type-Options: nosniff
+Location: https://leagueoflegends.fandom.com/wiki/Minor_Characters/Noxus#Rictus
+X-Ssexp: other
+X-Mobile-App: 0
+Last-Modified: Thu, 31 Jul 2025 10:47:07 GMT
+X-Cacheable: YES
+Accept-Ranges: bytes
+Age: 0
+Date: Thu, 31 Jul 2025 10:47:07 GMT
+X-Served-By: cache-iad-kcgs7200045-IAD, cache-iad-kcgs7200045-IAD, cache-par-lfpg1960078-PAR
+X-Cache: MISS, MISS, MISS
+X-Cache-Hits: 0, 0, 0
+X-Timer: S1753958827.226309,VS0,VE123
+Vary: Accept-Encoding, X-Mobile-App, X-Ssexp, Cookie
+Strict-Transport-Security: max-age=300; includeSubDomains
+Server-Timing: dc;desc="res", roaa;desc="active", roaadc;desc="res", roaareason;desc="read_closest", roaavariant;desc="none"
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
