@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 
 BOT_NAME = 'scraper'
 
@@ -11,14 +12,12 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
-# Configure maximum concurrent requests
-CONCURRENT_REQUESTS = 32
-CONCURRENT_REQUESTS_PER_DOMAIN = 16
-CONCURRENT_REQUESTS_PER_IP = 16
+# Configure maximum concurrent requests performing at the same time to the same domain
+CONCURRENT_REQUESTS = 16
+CONCURRENT_REQUESTS_PER_DOMAIN = 8
 
 # Configure a delay for requests for the same website
-DOWNLOAD_DELAY = 0.5  # Reduced delay
-RANDOMIZE_DOWNLOAD_DELAY = True
+DOWNLOAD_DELAY = 0.5
 
 # Enable or disable downloader middlewares
 DOWNLOADER_MIDDLEWARES = {
@@ -26,60 +25,33 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
 }
 
-# Configure item pipelines
-ITEM_PIPELINES = {
-    'scraper.pipelines.ValidationPipeline': 100,
-    'scraper.pipelines.CleaningPipeline': 200,
-    'scraper.pipelines.OptimizedImagePipeline': 300,  # Using optimized pipeline
-    'scraper.pipelines.DuplicatesPipeline': 400,
+# Configure JSON export
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(current_dir))
+data_dir = os.path.join(project_root, 'data')
+os.makedirs(data_dir, exist_ok=True)
+
+FEEDS = {
+    os.path.join(data_dir, '%(name)s_characters.json'): {
+        'format': 'json',
+        'encoding': 'utf8',
+        'store_empty': False,
+        'indent': 2,
+        'overwrite': True,
+    }
 }
 
-# Retry configuration
+# Enable retry on error
 RETRY_ENABLED = True
-RETRY_TIMES = 2  # Reduced retry times
+RETRY_TIMES = 3
 RETRY_HTTP_CODES = [500, 502, 503, 504, 408, 429]
 
-# Cache configuration
-HTTPCACHE_ENABLED = True
-HTTPCACHE_EXPIRATION_SECS = 86400  # 24 hours
-HTTPCACHE_DIR = 'httpcache'
-HTTPCACHE_IGNORE_HTTP_CODES = [404, 500, 502, 503, 504]
-HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-# Log configuration
+# Enable logging
 LOG_LEVEL = 'INFO'
-LOG_FILE = 'scraping.log'
 
-# Timeout configuration
-DOWNLOAD_TIMEOUT = 30  # Reduced timeout
-
-# Memory usage
-MEMUSAGE_ENABLED = True
-MEMUSAGE_WARNING_MB = 512
-
-# Redirections
-REDIRECT_ENABLED = True
-REDIRECT_MAX_TIMES = 3  # Reduced max redirects
-
-# Enable cookies and compression
-COOKIES_ENABLED = True
-COMPRESSION_ENABLED = True
-
-# DNS cache
-DNSCACHE_ENABLED = True
-
-# Enable AutoThrottle
-AUTOTHROTTLE_ENABLED = True
-AUTOTHROTTLE_START_DELAY = 1
-AUTOTHROTTLE_MAX_DELAY = 10
-AUTOTHROTTLE_TARGET_CONCURRENCY = 4.0
-
-# Disable some unused middlewares
-DOWNLOADER_MIDDLEWARES.update({
-    'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware': None,
-    'scrapy.downloadermiddlewares.ajaxcrawl.AjaxCrawlMiddleware': None,
-})
-
-# Feed export
-FEED_EXPORT_ENCODING = 'utf-8'
-FEED_EXPORT_INDENT = 2
+# Enable and configure HTTP caching
+HTTPCACHE_ENABLED = True
+HTTPCACHE_EXPIRATION_SECS = 0
+HTTPCACHE_DIR = 'httpcache'
+HTTPCACHE_IGNORE_HTTP_CODES = []
+HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'

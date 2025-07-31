@@ -1,0 +1,20 @@
+Content-Length: 1262
+X-Envoy-Upstream-Service-Time: 47
+Server: envoy
+Content-Type: text/plain; charset=UTF-8
+Content-Encoding: gzip
+X-Cacheable: YES
+Accept-Ranges: bytes
+Age: 4451
+Date: Thu, 31 Jul 2025 14:54:11 GMT
+X-Served-By: cache-iad-kiad7000071-IAD, cache-iad-kiad7000071-IAD, cache-par-lfpg1960054-PAR
+X-Cache: MISS, HIT, MISS
+X-Cache-Hits: 0, 8, 0
+X-Timer: S1753973651.027053,VS0,VE78
+Vary: Accept-Encoding
+Set-Cookie: exp_bucket=v6-32; domain=.fandom.com; path=/; expires=Sat, 31 Jul 2027 14:54:11 GMT;
+Set-Cookie: exp_bucket_2=v5-21; domain=.fandom.com; path=/; expires=Sat, 31 Jul 2027 14:54:11 GMT;
+Set-Cookie: Geo={%22region%22:%22IDF%22%2C%22city%22:%22paris%22%2C%22country_name%22:%22france%22%2C%22country%22:%22FR%22%2C%22continent%22:%22EU%22}; path=/; domain=.fandom.com; SameSite=None; Secure;
+Strict-Transport-Security: max-age=300; includeSubDomains
+Server-Timing: roaa;desc="active", roaadc;desc="res", roaareason;desc="read_closest", roaavariant;desc="none"
+Cache-Control: public, max-age=86400

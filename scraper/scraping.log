@@ -212,3 +212,880 @@ See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for 
  'scheduler/enqueued/memory': 233,
  'start_time': datetime.datetime(2025, 7, 31, 10, 51, 39, 585490, tzinfo=datetime.timezone.utc)}
 2025-07-31 12:52:59 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:33:40 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:33:40 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:33:40 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:33:40 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:33:40 [scrapy.extensions.telnet] INFO: Telnet Password: c227d7caac93f524
+2025-07-31 14:33:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:33:40 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:33:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:33:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:33:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:33:40 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:33:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:33:40 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:33:43 [scrapy.core.scraper] WARNING: Dropped: Item incomplet trouvé: {'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/9/9c/Renni_Arcane_Render.png',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Renni'}
+{'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/9/9c/Renni_Arcane_Render.png',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Renni'}
+2025-07-31 14:33:45 [scrapy.core.scraper] WARNING: Dropped: Item incomplet trouvé: {'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Necrit_RuinedKing_Portrait_01.jpg',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Necrit'}
+{'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Necrit_RuinedKing_Portrait_01.jpg',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Necrit'}
+2025-07-31 14:33:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://leagueoflegends.fandom.com/wiki/Category:Characters_in_Song_of_Nunu>: HTTP status code is not handled or not allowed
+2025-07-31 14:33:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://leagueoflegends.fandom.com/wiki/Category:Character_articles_with_audio_files>: HTTP status code is not handled or not allowed
+2025-07-31 14:33:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:33:58 [scrapy.extensions.feedexport] INFO: Stored json feed (163 items) in: ../data/characters.json
+2025-07-31 14:33:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 2,
+ 'downloader/request_bytes': 114754,
+ 'downloader/request_count': 232,
+ 'downloader/request_method_count/GET': 232,
+ 'downloader/response_bytes': 17259593,
+ 'downloader/response_count': 232,
+ 'downloader/response_status_count/200': 225,
+ 'downloader/response_status_count/301': 5,
+ 'downloader/response_status_count/404': 2,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 18.088863,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 33, 58, 681978, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 2,
+ 'httpcache/hit': 230,
+ 'httpcache/miss': 2,
+ 'httpcache/uncacheable': 2,
+ 'httpcompression/response_bytes': 217565635,
+ 'httpcompression/response_count': 227,
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/404': 2,
+ 'item_dropped_count': 2,
+ 'item_dropped_reasons_count/DropItem': 2,
+ 'item_scraped_count': 163,
+ 'log_count/INFO': 13,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 71098368,
+ 'memusage/startup': 71098368,
+ 'request_depth_max': 3,
+ 'response_received_count': 227,
+ 'robotstxt/forbidden': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 233,
+ 'scheduler/dequeued/memory': 233,
+ 'scheduler/enqueued': 233,
+ 'scheduler/enqueued/memory': 233,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 33, 40, 593115, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:33:58 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:34:34 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:34:34 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:34:34 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:34:34 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:34:34 [scrapy.extensions.telnet] INFO: Telnet Password: 6c24c1e3d9404eb1
+2025-07-31 14:34:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:34:34 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:34:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:34:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:34:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:34:34 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:34:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:34:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:34:36 [scrapy.core.scraper] WARNING: Dropped: Item incomplet trouvé: {'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/9/9c/Renni_Arcane_Render.png',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Renni'}
+{'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/9/9c/Renni_Arcane_Render.png',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Renni'}
+2025-07-31 14:34:38 [scrapy.core.scraper] WARNING: Dropped: Item incomplet trouvé: {'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Necrit_RuinedKing_Portrait_01.jpg',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Necrit'}
+{'image_url': 'https://static.wikia.nocookie.net/leagueoflegends/images/b/b6/Necrit_RuinedKing_Portrait_01.jpg',
+ 'name': '',
+ 'url': 'https://leagueoflegends.fandom.com/wiki/Necrit'}
+2025-07-31 14:34:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://leagueoflegends.fandom.com/wiki/Category:Characters_in_Song_of_Nunu>: HTTP status code is not handled or not allowed
+2025-07-31 14:34:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://leagueoflegends.fandom.com/wiki/Category:Character_articles_with_audio_files>: HTTP status code is not handled or not allowed
+2025-07-31 14:34:51 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:34:51 [scrapy.extensions.feedexport] INFO: Stored json feed (163 items) in: ../data/characters.json
+2025-07-31 14:34:51 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 2,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 2,
+ 'downloader/request_bytes': 114754,
+ 'downloader/request_count': 232,
+ 'downloader/request_method_count/GET': 232,
+ 'downloader/response_bytes': 17259593,
+ 'downloader/response_count': 232,
+ 'downloader/response_status_count/200': 225,
+ 'downloader/response_status_count/301': 5,
+ 'downloader/response_status_count/404': 2,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 17.421934,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 34, 51, 607740, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 2,
+ 'httpcache/hit': 230,
+ 'httpcache/miss': 2,
+ 'httpcache/uncacheable': 2,
+ 'httpcompression/response_bytes': 217565635,
+ 'httpcompression/response_count': 227,
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/404': 2,
+ 'item_dropped_count': 2,
+ 'item_dropped_reasons_count/DropItem': 2,
+ 'item_scraped_count': 163,
+ 'log_count/INFO': 13,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 70725632,
+ 'memusage/startup': 70725632,
+ 'request_depth_max': 3,
+ 'response_received_count': 227,
+ 'robotstxt/forbidden': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 233,
+ 'scheduler/dequeued/memory': 233,
+ 'scheduler/enqueued': 233,
+ 'scheduler/enqueued/memory': 233,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 34, 34, 185806, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:34:51 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:41:49 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:41:49 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:41:49 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:41:49 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:41:50 [scrapy.extensions.telnet] INFO: Telnet Password: 67a5c61ceda656f0
+2025-07-31 14:41:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:41:50 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:41:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:41:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:41:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:41:50 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:41:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:41:50 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:41:50 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:41:50 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: /home/sarah/Bureau/scarpy/data/characters.json
+2025-07-31 14:41:50 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1177,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 126153,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 0.290978,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 41, 50, 399684, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 3,
+ 'httpcompression/response_bytes': 1013628,
+ 'httpcompression/response_count': 3,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 71016448,
+ 'memusage/startup': 71016448,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 41, 50, 108706, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:41:50 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:52:21 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:52:21 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:52:21 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:52:21 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:52:21 [scrapy.extensions.telnet] INFO: Telnet Password: 059ff24f687e46d0
+2025-07-31 14:52:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:52:22 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:52:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:52:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:52:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:52:22 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:52:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:52:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:52:22 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:52:22 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1587,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 127191,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 0.333242,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 52, 22, 426561, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/hit': 3,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 1013628,
+ 'httpcompression/response_count': 4,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 70971392,
+ 'memusage/startup': 70971392,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 52, 22, 93319, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:52:22 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:55:11 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:55:11 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:55:11 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:55:11 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:55:11 [scrapy.extensions.telnet] INFO: Telnet Password: fc6cd911c57a99a5
+2025-07-31 14:55:11 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:55:11 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_ENABLED': False,
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:55:11 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:55:11 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:55:11 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:55:11 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:55:11 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:55:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:55:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:55:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1587,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 127191,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 3,
+ 'downloader/response_status_count/301': 1,
+ 'elapsed_time_seconds': 0.28635,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 55, 12, 285733, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 4,
+ 'httpcompression/response_bytes': 1013628,
+ 'httpcompression/response_count': 4,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 70582272,
+ 'memusage/startup': 70582272,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 55, 11, 999383, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:55:12 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:56:49 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:56:49 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:56:49 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:56:49 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:56:49 [scrapy.extensions.telnet] INFO: Telnet Password: 6445cbf5a6afa3b2
+2025-07-31 14:56:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:56:49 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_ENABLED': False,
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:56:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:56:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:56:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:56:49 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:56:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:56:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:56:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:56:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1177,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 126153,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 0.286198,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 56, 49, 569560, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 3,
+ 'httpcompression/response_bytes': 1013628,
+ 'httpcompression/response_count': 3,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 70709248,
+ 'memusage/startup': 70709248,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 56, 49, 283362, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:56:49 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:57:25 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:57:25 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:57:25 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:57:25 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:57:25 [scrapy.extensions.telnet] INFO: Telnet Password: 99c1eff0d6ce775b
+2025-07-31 14:57:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:57:25 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_ENABLED': False,
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:57:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:57:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:57:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:57:25 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:57:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:57:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:57:26 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:57:26 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1177,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 126153,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 0.285537,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 57, 26, 148274, tzinfo=datetime.timezone.utc),
+ 'httpcache/hit': 3,
+ 'httpcompression/response_bytes': 1013628,
+ 'httpcompression/response_count': 3,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 70975488,
+ 'memusage/startup': 70975488,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 57, 25, 862737, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:57:26 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-07-31 14:58:35 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scraper)
+2025-07-31 14:58:35 [scrapy.utils.log] INFO: Versions: lxml 4.9.3.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.8.1, w3lib 1.21.0, Twisted 23.10.0, Python 3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:12:24) [GCC 11.2.0], pyOpenSSL 24.0.0 (OpenSSL 3.0.15 3 Sep 2024), cryptography 42.0.5, Platform Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+2025-07-31 14:58:35 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-31 14:58:35 [py.warnings] WARNING: /home/sarah/anaconda3/lib/python3.12/site-packages/scrapy/utils/request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2025-07-31 14:58:35 [scrapy.extensions.telnet] INFO: Telnet Password: 70836c02acb42f1e
+2025-07-31 14:58:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2025-07-31 14:58:35 [scrapy.crawler] INFO: Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'AUTOTHROTTLE_MAX_DELAY': 10,
+ 'AUTOTHROTTLE_START_DELAY': 1,
+ 'AUTOTHROTTLE_TARGET_CONCURRENCY': 4.0,
+ 'BOT_NAME': 'scraper',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 16,
+ 'CONCURRENT_REQUESTS_PER_IP': 16,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DOWNLOAD_TIMEOUT': 30,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'FEED_EXPORT_INDENT': 2,
+ 'HTTPCACHE_ENABLED': True,
+ 'HTTPCACHE_EXPIRATION_SECS': 86400,
+ 'HTTPCACHE_IGNORE_HTTP_CODES': [404, 500, 502, 503, 504],
+ 'LOG_ENABLED': False,
+ 'LOG_FILE': 'scraping.log',
+ 'LOG_LEVEL': 'INFO',
+ 'MEMUSAGE_WARNING_MB': 512,
+ 'NEWSPIDER_MODULE': 'scraper.spiders',
+ 'REDIRECT_MAX_TIMES': 3,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 408, 429],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scraper.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-07-31 14:58:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2025-07-31 14:58:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-31 14:58:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['scraper.pipelines.ValidationPipeline',
+ 'scraper.pipelines.CleaningPipeline',
+ 'scraper.pipelines.OptimizedImagePipeline',
+ 'scraper.pipelines.DuplicatesPipeline']
+2025-07-31 14:58:35 [scrapy.core.engine] INFO: Spider opened
+2025-07-31 14:58:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-31 14:58:35 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-31 14:58:35 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-31 14:58:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1175,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 131684,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 3,
+ 'elapsed_time_seconds': 0.327764,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 31, 12, 58, 35, 488391, tzinfo=datetime.timezone.utc),
+ 'httpcache/firsthand': 1,
+ 'httpcache/hit': 2,
+ 'httpcache/miss': 1,
+ 'httpcache/store': 1,
+ 'httpcompression/response_bytes': 1031739,
+ 'httpcompression/response_count': 3,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 70705152,
+ 'memusage/startup': 70705152,
+ 'request_depth_max': 1,
+ 'response_received_count': 3,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2025, 7, 31, 12, 58, 35, 160627, tzinfo=datetime.timezone.utc)}
+2025-07-31 14:58:35 [scrapy.core.engine] INFO: Spider closed (finished)
