@@ -1,0 +1,21 @@
+Content-Length: 0
+X-Content-Type-Options: nosniff
+X-Ssexp: other
+X-Envoy-Upstream-Service-Time: 32
+Location: https://pokemon.fandom.com/wiki/Category_talk:Anime_Arrested_Characters
+X-Mobile-App: 0
+X-Request-Id: 4571914e0177d263f51526a595801b4d
+X-Datacenter: RES
+Content-Type: text/html; charset=UTF-8
+X-Cacheable: YES - FORCED
+Accept-Ranges: bytes
+Age: 0
+Date: Fri, 01 Aug 2025 13:59:18 GMT
+X-Served-By: cache-iad-kcgs7200083-IAD, cache-iad-kcgs7200083-IAD, cache-par-lfpb1150030-PAR
+X-Cache: MISS, MISS, MISS
+X-Cache-Hits: 0, 0, 0
+X-Timer: S1754056758.892623,VS0,VE138
+Vary: Accept-Encoding, X-Mobile-App, X-Ssexp, Cookie
+Strict-Transport-Security: max-age=300; includeSubDomains
+Server-Timing: dc;desc="res", roaa;desc="active", roaadc;desc="res", roaareason;desc="read_closest", roaavariant;desc="none"
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate

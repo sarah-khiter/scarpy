@@ -27,11 +27,42 @@ function SearchBar({ onSearch, isLoading }) {
 }
 
 function CharacterCard({ character, onSelect, isSelected, isCompareMode }) {
+  // Fonction helper pour afficher les détails s'ils existent
+  const renderDetails = () => {
+    if (!character) return null;
+
+    const details = [
+      { label: 'Type', value: character.type },
+      { label: 'Rôle', value: character.role },
+      { label: 'Classe', value: character.class_name },
+      { label: 'Origine', value: character.origin },
+      { label: 'Affiliation', value: character.affiliation },
+      { label: 'Occupation', value: character.occupation }
+    ].filter(detail => detail.value && detail.value !== "null" && detail.value !== "undefined");
+
+    if (details.length === 0) return null;
+
+    return (
+      <div className="character-details">
+        {details.map((detail, index) => (
+          <div key={index} className="detail-item">
+            <span className="detail-label">{detail.label}:</span>
+            <span className="detail-value">{detail.value}</span>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  if (!character || !character.name) {
+    return null;
+  }
+
   return (
     <div className={`character-card ${isSelected ? 'selected' : ''}`}>
       <div className="character-image">
         <img 
-          src={character.image_url} 
+          src={character.image_url || '/placeholder.png'} 
           alt={character.name} 
           onError={(e) => {
             e.target.onerror = null;
@@ -41,15 +72,20 @@ function CharacterCard({ character, onSelect, isSelected, isCompareMode }) {
       </div>
       <div className="character-info">
         <h3>{character.name}</h3>
+        
+        {renderDetails()}
+
         <div className="character-actions">
-          <a 
-            href={character.url} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="character-link"
-          >
-            Voir la page
-          </a>
+          {character.url && (
+            <a 
+              href={character.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="character-link"
+            >
+              Voir la page
+            </a>
+          )}
           {isCompareMode && (
             <button 
               onClick={() => onSelect(character)}
@@ -139,19 +175,6 @@ function App() {
     fetchWikis();
   }, []);
 
-  const fetchWikis = async () => {
-    try {
-      const response = await fetch('http://localhost:5000/wikis');
-      if (!response.ok) throw new Error('Erreur lors de la récupération des wikis');
-      const data = await response.json();
-      if (data.success) {
-        setWikis(data.wikis);
-      }
-    } catch (err) {
-      console.error('Erreur:', err);
-    }
-  };
-
   const handleWikiSelect = async (wikiName) => {
     setSelectedWiki(wikiName);
     setIsLoading(true);
@@ -160,13 +183,21 @@ function App() {
     try {
       const response = await fetch(`http://localhost:5000/wiki/${wikiName}`);
       const data = await response.json();
+      console.log('Données reçues du wiki:', data); // Debug
 
       if (response.ok && data.success) {
-        setCharacters(data.data);
+        if (Array.isArray(data.data)) {
+          setCharacters(data.data);
+          console.log('Personnages chargés:', data.data.length);
+        } else {
+          console.error('Les données ne sont pas un tableau:', data.data);
+          setError('Format de données incorrect');
+        }
       } else {
         setError(data.error || 'Erreur lors de la récupération des données');
       }
     } catch (err) {
+      console.error('Erreur complète:', err);
       setError('Erreur de connexion au serveur');
     } finally {
       setIsLoading(false);
@@ -212,22 +243,51 @@ function App() {
       });
 
       const data = await response.json();
+      console.log('Données reçues du scraping:', data); // Debug
 
       if (!response.ok) {
         throw new Error(data.error || 'Erreur lors du scraping');
       }
 
       if (data.success) {
-        setCharacters(data.data);
+        if (Array.isArray(data.data)) {
+          setCharacters(data.data);
+          console.log('Personnages chargés:', data.data.length);
+        } else {
+          console.error('Les données ne sont pas un tableau:', data.data);
+          setError('Format de données incorrect');
+        }
         // Rafraîchir la liste des wikis après un nouveau scraping
         fetchWikis();
       } else {
-        setError(data.error);
+        setError(data.error || 'Erreur: données non valides');
       }
     } catch (err) {
+      console.error('Erreur complète:', err);
       setError(err.message);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const fetchWikis = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/wikis');
+      const data = await response.json();
+      console.log('Liste des wikis reçue:', data); // Debug
+
+      if (response.ok && data.success) {
+        if (Array.isArray(data.wikis)) {
+          setWikis(data.wikis);
+          console.log('Wikis chargés:', data.wikis.length);
+        } else {
+          console.error('La liste des wikis n\'est pas un tableau:', data.wikis);
+        }
+      } else {
+        console.error('Erreur lors de la récupération des wikis:', data.error);
+      }
+    } catch (err) {
+      console.error('Erreur lors de la récupération des wikis:', err);
     }
   };
 

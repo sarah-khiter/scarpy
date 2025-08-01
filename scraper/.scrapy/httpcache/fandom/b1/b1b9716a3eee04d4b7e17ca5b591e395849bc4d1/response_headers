@@ -1,0 +1,15 @@
+Date: Fri, 01 Aug 2025 14:08:30 GMT
+Content-Type: text/plain
+X-Frame-Options: DENY
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=%2BOIE%2FrIkCLY4a2husBi%2FAi4UeQQnriWhDzS9fk4Kh%2F4mcvAiwAtFvcw5WKTEqeohZJZXi66SQRo33wPRwt1kKrwcbR7hLjj83ve8BFfXKqRvxRkB6omgLvYkrhR0"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+Set-Cookie: __cfruid=a96256ee50e01c883232bc6716a8ca7df0097fa7-1754057310; path=/; domain=.discord.com; HttpOnly; Secure; SameSite=None
+Set-Cookie: _cfuvid=TiAhIkIdp4bIXskp1tjGxBs5M3yf9YN8helztRsJhHw-1754057310980-0.0.1.1-604800000; path=/; domain=.discord.com; HttpOnly; Secure; SameSite=None
+Reporting-Endpoints: csp-sentry="https://o64374.ingest.sentry.io/api/5441894/security/?sentry_key=8fbbce30bf5244ec9429546beef21870&sentry_environment=stable"
+Server: cloudflare
+Cf-Ray: 9685e8716ece6fed-CDG
+Content-Encoding: br
+Alt-Svc: h3=":443"; ma=86400

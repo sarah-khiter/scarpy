@@ -1,252 +1,341 @@
 [
 {
-  "name": "Alexis Flament",
-  "url": "https://rainbowsix.fandom.com/wiki/Alexis_Flament",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/2/2e/Alexis_Flament_Photo.png"
+  "name": "Aavi",
+  "url": "https://mortalkombat.fandom.com/wiki/Aavi",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/92/Avi.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Alibi (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Alibi_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/5/57/Alibi_Extraction.png"
+  "name": "Kuai Liang",
+  "url": "https://mortalkombat.fandom.com/wiki/Kuai_Liang",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/Scorpion_MK1_render.webp",
+  "origin": "China,  Earthrealm",
+  "type": "1 st  and 2 nd  Timelines:  Human / Cryomancer  3 rd  Timeline:  Human / Pyromancer"
 },
 {
-  "name": "Ash (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Ash_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/5/5c/Ash_Extraction.jpeg"
+  "name": "Kollector",
+  "url": "https://mortalkombat.fandom.com/wiki/Kollector",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/91/Kollector_MK11.png",
+  "origin": "Outworld",
+  "type": "Naknada"
 },
 {
-  "name": "Boyd Brooks",
-  "url": "https://rainbowsix.fandom.com/wiki/Boyd_Brooks",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/8e/Boyd_Brooks.jpeg"
+  "name": "Kitana",
+  "url": "https://mortalkombat.fandom.com/wiki/Kitana",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/5/51/Kitana_MK1_render.webp",
+  "origin": "1 st  & 2 nd  Timelines:  Edenia  3 rd  Timeline:  Outworld",
+  "type": "1 st  Timeline:  Edenian  2 nd  Timeline: Present Version: Revenant Past Version: Edenian 3 rd  Timelines:  Edenian"
 },
 {
-  "name": "Capitão (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Capit%C3%A3o_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/80/Capitao_Extraction.png"
+  "name": "Khameleon",
+  "url": "https://mortalkombat.fandom.com/wiki/Khameleon",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a8/Khameleon_MK1.png",
+  "origin": "Zaterra",
+  "type": "Saurian"
 },
 {
-  "name": "Doc (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Doc_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/5/58/Doc_Extraction.png"
+  "name": "Kenshi Takahashi",
+  "url": "https://mortalkombat.fandom.com/wiki/Kenshi_Takahashi",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/4/4a/Kenshi_MK1_render.webp",
+  "origin": "Japan,  Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Dokkaebi",
-  "url": "https://rainbowsix.fandom.com/wiki/Dokkaebi",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/9/9a/Dokkaebi_-_Full_Body.png"
+  "name": "Johnny Cage",
+  "url": "https://mortalkombat.fandom.com/wiki/Johnny_Cage",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/c0/JohnnyCage_MK1_render.webp",
+  "origin": "1 st  & 2 nd  Timelines:  Earthrealm  (Venice, California, USA) [ 1 ] [ 2 ] 3 rd  Timeline:  Earthrealm  (Malibu, California, USA)",
+  "type": "Human"
 },
 {
-  "name": "Echo (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Echo_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/0/0d/Echo_Extraction_Portrait_1.png"
+  "name": "Homelander",
+  "url": "https://mortalkombat.fandom.com/wiki/Homelander",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/3e/Homelander_%28trailer_appearance%29.png",
+  "origin": "The Boys Universe",
+  "type": "Supe  (artificially-born)"
 },
 {
-  "name": "Ela (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Ela_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/6/60/Ela_Extraction.png"
+  "name": "Havik",
+  "url": "https://mortalkombat.fandom.com/wiki/Havik",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/78/Havik_MK1_render.webp",
+  "origin": "1 st  and 2 nd  Timelines: Khaosrealm 3 rd  Timeline: Current Version: Orderrealm Titan Variant: Khaosrealm",
+  "type": "1 st  and 2 nd  Timelines: Khaosrealmer 3 rd  Timeline: Current Version: Seidan Titan Variant: Titan  (formerly  Khaosrealmer )"
 },
 {
-  "name": "Finka (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Finka_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/5/5f/Finka_Extraction.png"
+  "name": "Ghostface",
+  "url": "https://mortalkombat.fandom.com/wiki/Ghostface",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/9a/Ghostface_Render.png",
+  "origin": "Scream Universe",
+  "type": "Human"
 },
 {
-  "name": "Fuze (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Fuze_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/9/9b/Fuze_Extraction.png"
+  "name": "Geras",
+  "url": "https://mortalkombat.fandom.com/wiki/Geras",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/36/Geras_MK1_Render.png",
+  "origin": "Kronika's Keep ,  Netherrealm",
+  "type": "Artificial Construct"
 },
 {
-  "name": "Gridlock (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Gridlock_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/a/a8/Gridlock_Extraction.png"
+  "name": "Frost",
+  "url": "https://mortalkombat.fandom.com/wiki/Frost",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/5/52/Frost_MK1_Render.png",
+  "origin": "China,  Earthrealm",
+  "type": "1 st  Timeline:  Human / Cryomancer  2 nd  Timeline:  Cyborg / Cryomancer"
 },
 {
-  "name": "Harry Pandey",
-  "url": "https://rainbowsix.fandom.com/wiki/Harry_Pandey",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/5/5b/R6S_harry_1.jpg"
+  "name": "Ermac",
+  "url": "https://mortalkombat.fandom.com/wiki/Ermac",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a0/Ermac_MK1_render.png",
+  "origin": "1 st  and 2 nd  Timeline:  Outworld 3 rd  Timeline:  Living Forest ,  Outworld",
+  "type": "1 st  Timeline:  Construct  (Fusion of Edenian Souls)  2 nd  Timeline:  Construct  (Fusion of Edenian Souls, including King  Jerrod )  3 rd  Timeline:  Construct  (Fusion of Souls, including  Jerrod  and  Sindel )"
 },
 {
-  "name": "Hibana (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Hibana_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/5/5c/Hibana_Extraction.png"
+  "name": "Darrius",
+  "url": "https://mortalkombat.fandom.com/wiki/Darrius",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/7a/Darrius_MK1_Render.png",
+  "origin": "Orderrealm",
+  "type": "Seidan"
 },
 {
-  "name": "Iana",
-  "url": "https://rainbowsix.fandom.com/wiki/Iana",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/81/Iana_-_Full_Body.png"
+  "name": "Daegon",
+  "url": "https://mortalkombat.fandom.com/wiki/Daegon",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/f7/Daegon_Render_MKA.png",
+  "origin": "1 st  & 2 nd  Timelines:  Edenia 3 rd  Timeline:  Outworld",
+  "type": "1 st  & 2 nd  Timelines:  Demi-God  ( Edenian  descent) 3 rd  Timeline:  Edenian"
 },
 {
-  "name": "INDEX",
-  "url": "https://rainbowsix.fandom.com/wiki/INDEX",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/7/7f/Index_Extraction.jpeg"
+  "name": "Conan",
+  "url": "https://mortalkombat.fandom.com/wiki/Conan",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b0/ConanMK1.png",
+  "origin": "Conan Universe",
+  "type": "Human"
 },
 {
-  "name": "IQ (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/IQ_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/f/f5/IQ_Extraction.png"
+  "name": "Meat",
+  "url": "https://mortalkombat.fandom.com/wiki/Meat",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/64/MEAtT.png",
+  "origin": "Shang Tsung's Flesh Pits ,  Outworld",
+  "type": "Genetic Experiment"
 },
 {
-  "name": "Jana Bosak",
-  "url": "https://rainbowsix.fandom.com/wiki/Jana_Bosak",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/8b/Zofia_Daughter.PNG"
+  "name": "Maya",
+  "url": "https://mortalkombat.fandom.com/wiki/Maya",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/09/Maya.png",
+  "origin": "Edenia",
+  "type": "Edenian"
 },
 {
-  "name": "Jäger (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/J%C3%A4ger_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/f/f1/Jager_Extraction_Placeholder_1.png"
+  "name": "Mavado",
+  "url": "https://mortalkombat.fandom.com/wiki/Mavado",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/33/MK1_Mavado_Render.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Lion (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Lion_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/1/1e/Lion_Extraction.png"
+  "name": "Master Shen",
+  "url": "https://mortalkombat.fandom.com/wiki/Master_Shen",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e4/Master_Shen.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Mira (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Mira_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/b/ba/Mira_Extraction.jpeg"
+  "name": "Master Leel",
+  "url": "https://mortalkombat.fandom.com/wiki/Master_Leel",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b3/Leel.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Nomad (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Nomad_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/a/a4/Nomad_Extraction.png"
+  "name": "Master Jai",
+  "url": "https://mortalkombat.fandom.com/wiki/Master_Jai",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/63/Jai.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Pulse (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Pulse_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/e/e5/Pulse_Extraction.png"
+  "name": "Master Hwang",
+  "url": "https://mortalkombat.fandom.com/wiki/Master_Hwang",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/bc/Hwang2.jpg",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Rook (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Rook_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/81/Rook_Extraction.png"
+  "name": "Master Cho",
+  "url": "https://mortalkombat.fandom.com/wiki/Master_Cho",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/07/Master_Cho1.jpg",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Sledge (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Sledge_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/8a/Sledge_Extraction.png"
+  "name": "Masked Guards",
+  "url": "https://mortalkombat.fandom.com/wiki/Masked_Guards",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/dd/Masked_Guard.jpg",
+  "origin": "Outworld",
+  "type": "Outworlder"
 },
 {
-  "name": "Smoke (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Smoke_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/b/b7/Smoke_Extraction.png"
+  "name": "Magda",
+  "url": "https://mortalkombat.fandom.com/wiki/Magda",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e3/Magda.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Tachanka (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Tachanka_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/3/37/Tachanka_Extraction.png"
+  "name": "Lori",
+  "url": "https://mortalkombat.fandom.com/wiki/Lori",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/04/Lori.jpg",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Thermite (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Thermite_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/8d/Thermite_Extraction.jpeg"
+  "name": "Zenkaro",
+  "url": "https://mortalkombat.fandom.com/wiki/Zenkaro",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/36/ZenkaroDOTR.png",
+  "type": "Shokan"
 },
 {
-  "name": "Vigil (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Vigil_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/5/51/Vigil_Extraction.png"
+  "name": "Zebron",
+  "url": "https://mortalkombat.fandom.com/wiki/Zebron",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e4/Zebron.jpg"
 },
 {
-  "name": "Zofia (Extraction)",
-  "url": "https://rainbowsix.fandom.com/wiki/Zofia_(Extraction)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/a/af/Zofia_Extraction.png"
+  "name": "Zara",
+  "url": "https://mortalkombat.fandom.com/wiki/Zara",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/d4/Zara.jpg",
+  "origin": "Amazon Realm",
+  "type": "Amazonian"
 },
 {
-  "name": "Ace",
-  "url": "https://rainbowsix.fandom.com/wiki/Ace",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/a/a6/Ace_-_Full_Body.png"
+  "name": "Zaggot",
+  "url": "https://mortalkombat.fandom.com/wiki/Zaggot",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/2/23/Zaggot.png",
+  "origin": "Chaosrealm",
+  "type": "God"
 },
 {
-  "name": "Alexis Flament",
-  "url": "https://rainbowsix.fandom.com/wiki/Alexis_Flament",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/2/2e/Alexis_Flament_Photo.png"
+  "name": "Z'dak",
+  "url": "https://mortalkombat.fandom.com/wiki/Z%27dak",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/ca/Zdak.png",
+  "origin": "Outworld"
 },
 {
-  "name": "Alibi (Siege)",
-  "url": "https://rainbowsix.fandom.com/wiki/Alibi_(Siege)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/f/f1/Alibi_-_Full_Body.png"
+  "name": "Wynd and Rayne",
+  "url": "https://mortalkombat.fandom.com/wiki/Wynd_and_Rayne",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/97/Wind_and_Rayne.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Amaru",
-  "url": "https://rainbowsix.fandom.com/wiki/Amaru",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/b/b9/Amaru.png"
+  "name": "Wu Lae",
+  "url": "https://mortalkombat.fandom.com/wiki/Wu_Lae",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/c1/WuLae.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Aruni",
-  "url": "https://rainbowsix.fandom.com/wiki/Aruni",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/e/e7/Aruni_Fullbody_cropped_resized_truecolor.png"
+  "name": "Wu",
+  "url": "https://mortalkombat.fandom.com/wiki/Wu",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/0b/Wu.png",
+  "origin": "Earthrealm",
+  "type": "Human",
+  "role": "Monk"
 },
 {
-  "name": "Ash (Siege)",
-  "url": "https://rainbowsix.fandom.com/wiki/Ash_(Siege)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/4/42/Ash_-_Full_Body.png"
+  "name": "Wonder Woman",
+  "url": "https://mortalkombat.fandom.com/wiki/Wonder_Woman",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/93/Wonderwoman.jpg",
+  "origin": "DC Universe",
+  "type": "Amazon"
 },
 {
-  "name": "Assaulter",
-  "url": "https://rainbowsix.fandom.com/wiki/Assaulter",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/6/6f/Siege_Assaulter.jpeg"
+  "name": "Wen the Elder",
+  "url": "https://mortalkombat.fandom.com/wiki/Wen_the_Elder",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/73/Wen.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Aurelia Arnot",
-  "url": "https://rainbowsix.fandom.com/wiki/Aurelia_Arnot",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/0/03/Angela_Bassett_Six.jpg"
+  "name": "Water God",
+  "url": "https://mortalkombat.fandom.com/wiki/Water_God",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/09/MKM_Water_God.png",
+  "origin": "Heaven",
+  "type": "God/Goddess"
 },
 {
-  "name": "Azami",
-  "url": "https://rainbowsix.fandom.com/wiki/Azami",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/6/61/Azami_Fullbody.png"
+  "name": "Vorpax",
+  "url": "https://mortalkombat.fandom.com/wiki/Vorpax",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/8/87/Vorpax.jpg",
+  "origin": "Outworld",
+  "type": "Human"
 },
 {
-  "name": "Bandit",
-  "url": "https://rainbowsix.fandom.com/wiki/Bandit",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/0/0a/Large-bandit.463ee829.png"
+  "name": "Vera Briggs",
+  "url": "https://mortalkombat.fandom.com/wiki/Vera_Briggs",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/94/GGaIbUN.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Blackbeard",
-  "url": "https://rainbowsix.fandom.com/wiki/Blackbeard",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/3/3e/Blackbeard_Rework_-_Full.png"
+  "name": "Vapor",
+  "url": "https://mortalkombat.fandom.com/wiki/Vapor",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b5/Vapor.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Blitz",
-  "url": "https://rainbowsix.fandom.com/wiki/Blitz",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/6/6c/Large-blitz.2e74d4b8.png"
+  "name": "User blog:VampireIllusion/Damon",
+  "url": "https://mortalkombat.fandom.com/wiki/User_blog:VampireIllusion/Damon",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/bf/MK_Vampire_created_Kombatant.jpg"
 },
 {
-  "name": "Boyd Brooks",
-  "url": "https://rainbowsix.fandom.com/wiki/Boyd_Brooks",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/8/8e/Boyd_Brooks.jpeg"
+  "name": "Unit 5",
+  "url": "https://mortalkombat.fandom.com/wiki/Unit_5",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/df/Ladder2_Cyborg_%28MK9%29.png",
+  "origin": "Earthrealm",
+  "type": "Cyborg"
 },
 {
-  "name": "Brava",
-  "url": "https://rainbowsix.fandom.com/wiki/Brava",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/6/63/Brava_-_Full_Body.png"
+  "name": "Undead General",
+  "url": "https://mortalkombat.fandom.com/wiki/Undead_General",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/dd/HUD_IMAGE_08.png"
 },
 {
-  "name": "Breacher (Operator)",
-  "url": "https://rainbowsix.fandom.com/wiki/Breacher_(Operator)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/2/29/Siege_Breacher.jpeg"
+  "name": "Trooper",
+  "url": "https://mortalkombat.fandom.com/wiki/Trooper",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b3/Special_Forces_Trooper.png",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Buck",
-  "url": "https://rainbowsix.fandom.com/wiki/Buck",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/d/d1/Buck_-_Full_Body.png"
+  "name": "Triborg",
+  "url": "https://mortalkombat.fandom.com/wiki/Triborg",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/f7/Tri-Borg_MKX_Render.png",
+  "origin": "Special Forces  Blacksite,  Earthrealm",
+  "type": "Cyborg"
 },
 {
-  "name": "Capitão (Siege)",
-  "url": "https://rainbowsix.fandom.com/wiki/Capit%C3%A3o_(Siege)",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/9/96/Large-capitao.984e75b7.png"
+  "name": "Torque",
+  "url": "https://mortalkombat.fandom.com/wiki/Torque",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/98/Torque.jpg",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Castle",
-  "url": "https://rainbowsix.fandom.com/wiki/Castle",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/d/d4/Castle_-_Full_Body.png"
+  "name": "Tormentor",
+  "url": "https://mortalkombat.fandom.com/wiki/Tormentor",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/2/22/Tormentormodel.png"
 },
 {
-  "name": "Caveira",
-  "url": "https://rainbowsix.fandom.com/wiki/Caveira",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/a/ac/Large-caveira.e4d82365.png"
+  "name": "Tomas (Mortal Kombat: Conquest)",
+  "url": "https://mortalkombat.fandom.com/wiki/Tomas_(Mortal_Kombat:_Conquest)",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/3c/Tomas.jpg",
+  "origin": "Earthrealm",
+  "type": "Human"
 },
 {
-  "name": "Clash",
-  "url": "https://rainbowsix.fandom.com/wiki/Clash",
-  "image_url": "https://static.wikia.nocookie.net/rainbowsix/images/1/10/Clash_new_full_render.png"
+  "name": "Tiamat",
+  "url": "https://mortalkombat.fandom.com/wiki/Tiamat",
+  "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b5/Tiamat_pic.png"
 }
 ]

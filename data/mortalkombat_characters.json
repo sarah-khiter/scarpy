@@ -1,252 +1,341 @@
 [
   {
-    "name": "Ashrah",
-    "url": "https://mortalkombat.fandom.com/wiki/Ashrah",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/be/Ashrah_MK1_render.webp"
-  },
-  {
-    "name": "Baraka",
-    "url": "https://mortalkombat.fandom.com/wiki/Baraka",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/4/40/Baraka_%28MK1%29_Render.png"
-  },
-  {
-    "name": "Bi-Han",
-    "url": "https://mortalkombat.fandom.com/wiki/Bi-Han",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/77/Sub-Zero_MK1_Render.png"
-  },
-  {
-    "name": "Conan",
-    "url": "https://mortalkombat.fandom.com/wiki/Conan",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b0/ConanMK1.png"
-  },
-  {
-    "name": "Daegon",
-    "url": "https://mortalkombat.fandom.com/wiki/Daegon",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/f7/Daegon_Render_MKA.png"
-  },
-  {
-    "name": "Darrius",
-    "url": "https://mortalkombat.fandom.com/wiki/Darrius",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/7a/Darrius_MK1_Render.png"
-  },
-  {
-    "name": "Ermac",
-    "url": "https://mortalkombat.fandom.com/wiki/Ermac",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a0/Ermac_MK1_render.png"
-  },
-  {
-    "name": "Frost",
-    "url": "https://mortalkombat.fandom.com/wiki/Frost",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/5/52/Frost_MK1_Render.png"
-  },
-  {
-    "name": "Geras",
-    "url": "https://mortalkombat.fandom.com/wiki/Geras",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/36/Geras_MK1_Render.png"
-  },
-  {
-    "name": "Ghostface",
-    "url": "https://mortalkombat.fandom.com/wiki/Ghostface",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/9a/Ghostface_Render.png"
-  },
-  {
-    "name": "Goro",
-    "url": "https://mortalkombat.fandom.com/wiki/Goro",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/68/Goro_MK1_Render.png"
-  },
-  {
-    "name": "Hanzo Hasashi",
-    "url": "https://mortalkombat.fandom.com/wiki/Hanzo_Hasashi",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/0f/Scorpion_MK1_Render.png"
-  },
-  {
-    "name": "Havik",
-    "url": "https://mortalkombat.fandom.com/wiki/Havik",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/78/Havik_MK1_render.webp"
-  },
-  {
-    "name": "Homelander",
-    "url": "https://mortalkombat.fandom.com/wiki/Homelander",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/3e/Homelander_%28trailer_appearance%29.png"
-  },
-  {
-    "name": "Johnny Cage",
-    "url": "https://mortalkombat.fandom.com/wiki/Johnny_Cage",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/c0/JohnnyCage_MK1_render.webp"
-  },
-  {
-    "name": "Kenshi Takahashi",
-    "url": "https://mortalkombat.fandom.com/wiki/Kenshi_Takahashi",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/4/4a/Kenshi_MK1_render.webp"
-  },
-  {
-    "name": "Khameleon",
-    "url": "https://mortalkombat.fandom.com/wiki/Khameleon",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a8/Khameleon_MK1.png"
-  },
-  {
-    "name": "Kitana",
-    "url": "https://mortalkombat.fandom.com/wiki/Kitana",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/5/51/Kitana_MK1_render.webp"
-  },
-  {
-    "name": "Kollector",
-    "url": "https://mortalkombat.fandom.com/wiki/Kollector",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/91/Kollector_MK11.png"
+    "name": "Aavi",
+    "url": "https://mortalkombat.fandom.com/wiki/Aavi",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/92/Avi.png",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
     "name": "Kuai Liang",
     "url": "https://mortalkombat.fandom.com/wiki/Kuai_Liang",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/Scorpion_MK1_render.webp"
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e5/Scorpion_MK1_render.webp",
+    "origin": "China,  Earthrealm",
+    "type": "1 st  and 2 nd  Timelines:  Human / Cryomancer  3 rd  Timeline:  Human / Pyromancer"
   },
   {
-    "name": "Kung Lao",
-    "url": "https://mortalkombat.fandom.com/wiki/Kung_Lao",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/4/49/KungLao_MK1_render.webp"
+    "name": "Kollector",
+    "url": "https://mortalkombat.fandom.com/wiki/Kollector",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/91/Kollector_MK11.png",
+    "origin": "Outworld",
+    "type": "Naknada"
   },
   {
-    "name": "Li Mei",
-    "url": "https://mortalkombat.fandom.com/wiki/Li_Mei",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/ca/LiMei_MK1_render.webp"
+    "name": "Kitana",
+    "url": "https://mortalkombat.fandom.com/wiki/Kitana",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/5/51/Kitana_MK1_render.webp",
+    "origin": "1 st  & 2 nd  Timelines:  Edenia  3 rd  Timeline:  Outworld",
+    "type": "1 st  Timeline:  Edenian  2 nd  Timeline: Present Version: Revenant Past Version: Edenian 3 rd  Timelines:  Edenian"
   },
   {
-    "name": "Liu Kang",
-    "url": "https://mortalkombat.fandom.com/wiki/Liu_Kang",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e9/Liu_Kang_Render_%28MK1%29.png"
+    "name": "Khameleon",
+    "url": "https://mortalkombat.fandom.com/wiki/Khameleon",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a8/Khameleon_MK1.png",
+    "origin": "Zaterra",
+    "type": "Saurian"
   },
   {
-    "name": "Mileena",
-    "url": "https://mortalkombat.fandom.com/wiki/Mileena",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/2/22/Mileena_MK1_render.webp"
+    "name": "Kenshi Takahashi",
+    "url": "https://mortalkombat.fandom.com/wiki/Kenshi_Takahashi",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/4/4a/Kenshi_MK1_render.webp",
+    "origin": "Japan,  Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Motaro",
-    "url": "https://mortalkombat.fandom.com/wiki/Motaro",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/fb/Motaro_MK1_Render.png"
+    "name": "Johnny Cage",
+    "url": "https://mortalkombat.fandom.com/wiki/Johnny_Cage",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/c0/JohnnyCage_MK1_render.webp",
+    "origin": "1 st  & 2 nd  Timelines:  Earthrealm  (Venice, California, USA) [ 1 ] [ 2 ] 3 rd  Timeline:  Earthrealm  (Malibu, California, USA)",
+    "type": "Human"
   },
   {
-    "name": "Nitara",
-    "url": "https://mortalkombat.fandom.com/wiki/Nitara",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/6c/Nitara_MK1_render.webp"
+    "name": "Homelander",
+    "url": "https://mortalkombat.fandom.com/wiki/Homelander",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/3e/Homelander_%28trailer_appearance%29.png",
+    "origin": "The Boys Universe",
+    "type": "Supe  (artificially-born)"
   },
   {
-    "name": "Omni-Man",
-    "url": "https://mortalkombat.fandom.com/wiki/Omni-Man",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b2/Omni-ManMK1.png"
+    "name": "Havik",
+    "url": "https://mortalkombat.fandom.com/wiki/Havik",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/78/Havik_MK1_render.webp",
+    "origin": "1 st  and 2 nd  Timelines: Khaosrealm 3 rd  Timeline: Current Version: Orderrealm Titan Variant: Khaosrealm",
+    "type": "1 st  and 2 nd  Timelines: Khaosrealmer 3 rd  Timeline: Current Version: Seidan Titan Variant: Titan  (formerly  Khaosrealmer )"
   },
   {
-    "name": "Peacemaker",
-    "url": "https://mortalkombat.fandom.com/wiki/Peacemaker",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a8/PeacemakerMK1.png"
+    "name": "Ghostface",
+    "url": "https://mortalkombat.fandom.com/wiki/Ghostface",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/9a/Ghostface_Render.png",
+    "origin": "Scream Universe",
+    "type": "Human"
   },
   {
-    "name": "Quan Chi",
-    "url": "https://mortalkombat.fandom.com/wiki/Quan_Chi",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/7d/QuanChi_MK1_render.webp"
+    "name": "Geras",
+    "url": "https://mortalkombat.fandom.com/wiki/Geras",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/36/Geras_MK1_Render.png",
+    "origin": "Kronika's Keep ,  Netherrealm",
+    "type": "Artificial Construct"
   },
   {
-    "name": "Raiden",
-    "url": "https://mortalkombat.fandom.com/wiki/Raiden",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/cd/Raiden_%28MK1%29_Render.png"
+    "name": "Frost",
+    "url": "https://mortalkombat.fandom.com/wiki/Frost",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/5/52/Frost_MK1_Render.png",
+    "origin": "China,  Earthrealm",
+    "type": "1 st  Timeline:  Human / Cryomancer  2 nd  Timeline:  Cyborg / Cryomancer"
   },
   {
-    "name": "Rain",
-    "url": "https://mortalkombat.fandom.com/wiki/Rain",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a5/Rain_MK1_render.webp"
+    "name": "Ermac",
+    "url": "https://mortalkombat.fandom.com/wiki/Ermac",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/a/a0/Ermac_MK1_render.png",
+    "origin": "1 st  and 2 nd  Timeline:  Outworld 3 rd  Timeline:  Living Forest ,  Outworld",
+    "type": "1 st  Timeline:  Construct  (Fusion of Edenian Souls)  2 nd  Timeline:  Construct  (Fusion of Edenian Souls, including King  Jerrod )  3 rd  Timeline:  Construct  (Fusion of Souls, including  Jerrod  and  Sindel )"
   },
   {
-    "name": "Reiko",
-    "url": "https://mortalkombat.fandom.com/wiki/Reiko",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/7e/Reiko_MK1_render.webp"
+    "name": "Darrius",
+    "url": "https://mortalkombat.fandom.com/wiki/Darrius",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/7a/Darrius_MK1_Render.png",
+    "origin": "Orderrealm",
+    "type": "Seidan"
   },
   {
-    "name": "Reptile",
-    "url": "https://mortalkombat.fandom.com/wiki/Reptile",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/c2/Reptile_MK1_render.webp"
+    "name": "Daegon",
+    "url": "https://mortalkombat.fandom.com/wiki/Daegon",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/f7/Daegon_Render_MKA.png",
+    "origin": "1 st  & 2 nd  Timelines:  Edenia 3 rd  Timeline:  Outworld",
+    "type": "1 st  & 2 nd  Timelines:  Demi-God  ( Edenian  descent) 3 rd  Timeline:  Edenian"
   },
   {
-    "name": "Sareena",
-    "url": "https://mortalkombat.fandom.com/wiki/Sareena",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/1/1d/Sareena_MK1_Render.png"
+    "name": "Conan",
+    "url": "https://mortalkombat.fandom.com/wiki/Conan",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b0/ConanMK1.png",
+    "origin": "Conan Universe",
+    "type": "Human"
   },
   {
-    "name": "Shang Tsung",
-    "url": "https://mortalkombat.fandom.com/wiki/Shang_Tsung",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/ef/ShangTsung_MK1_render.webp"
+    "name": "Meat",
+    "url": "https://mortalkombat.fandom.com/wiki/Meat",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/64/MEAtT.png",
+    "origin": "Shang Tsung's Flesh Pits ,  Outworld",
+    "type": "Genetic Experiment"
   },
   {
-    "name": "Shao Kahn",
-    "url": "https://mortalkombat.fandom.com/wiki/Shao_Kahn",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/fe/Shao_render.png"
+    "name": "Maya",
+    "url": "https://mortalkombat.fandom.com/wiki/Maya",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/09/Maya.png",
+    "origin": "Edenia",
+    "type": "Edenian"
   },
   {
-    "name": "Sindel",
-    "url": "https://mortalkombat.fandom.com/wiki/Sindel",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/05/Sindel_MK1_render.webp"
+    "name": "Mavado",
+    "url": "https://mortalkombat.fandom.com/wiki/Mavado",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/33/MK1_Mavado_Render.png",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Smoke",
-    "url": "https://mortalkombat.fandom.com/wiki/Smoke",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/95/Smoke_%28MK1%29_Render.png"
+    "name": "Master Shen",
+    "url": "https://mortalkombat.fandom.com/wiki/Master_Shen",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e4/Master_Shen.png",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Takeda Takahashi",
-    "url": "https://mortalkombat.fandom.com/wiki/Takeda_Takahashi",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/f1/TakedaMK1.png"
+    "name": "Master Leel",
+    "url": "https://mortalkombat.fandom.com/wiki/Master_Leel",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b3/Leel.png",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Tanya",
-    "url": "https://mortalkombat.fandom.com/wiki/Tanya",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/6a/Tanya_MK1_render.webp"
+    "name": "Master Jai",
+    "url": "https://mortalkombat.fandom.com/wiki/Master_Jai",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/63/Jai.png",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "The T-1000",
-    "url": "https://mortalkombat.fandom.com/wiki/The_T-1000",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/74/T-1000_temp.png"
+    "name": "Master Hwang",
+    "url": "https://mortalkombat.fandom.com/wiki/Master_Hwang",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/bc/Hwang2.jpg",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Tremor",
-    "url": "https://mortalkombat.fandom.com/wiki/Tremor",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/6/6e/Tremor_MK1_Render.png"
+    "name": "Master Cho",
+    "url": "https://mortalkombat.fandom.com/wiki/Master_Cho",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/07/Master_Cho1.jpg",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Aavi",
-    "url": "https://mortalkombat.fandom.com/wiki/Aavi",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/92/Avi.png"
+    "name": "Masked Guards",
+    "url": "https://mortalkombat.fandom.com/wiki/Masked_Guards",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/dd/Masked_Guard.jpg",
+    "origin": "Outworld",
+    "type": "Outworlder"
   },
   {
-    "name": "Abacus",
-    "url": "https://mortalkombat.fandom.com/wiki/Abacus",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/cf/Abacus.jpg"
+    "name": "Magda",
+    "url": "https://mortalkombat.fandom.com/wiki/Magda",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e3/Magda.png",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Allison Young",
-    "url": "https://mortalkombat.fandom.com/wiki/Allison_Young",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/79/Allison_Young.jpg"
+    "name": "Lori",
+    "url": "https://mortalkombat.fandom.com/wiki/Lori",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/04/Lori.jpg",
+    "origin": "Earthrealm",
+    "type": "Human"
   },
   {
-    "name": "Art Lean",
-    "url": "https://mortalkombat.fandom.com/wiki/Art_Lean",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/2/2c/Art_Lean.jpg"
+    "name": "Zenkaro",
+    "url": "https://mortalkombat.fandom.com/wiki/Zenkaro",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/36/ZenkaroDOTR.png",
+    "type": "Shokan"
   },
   {
-    "name": "Ashrah",
-    "url": "https://mortalkombat.fandom.com/wiki/Ashrah",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/be/Ashrah_MK1_render.webp"
+    "name": "Zebron",
+    "url": "https://mortalkombat.fandom.com/wiki/Zebron",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/e/e4/Zebron.jpg"
   },
   {
-    "name": "Baphomet",
-    "url": "https://mortalkombat.fandom.com/wiki/Baphomet",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/f5/Baphomet_the_Elder_God.jpg"
+    "name": "Zara",
+    "url": "https://mortalkombat.fandom.com/wiki/Zara",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/d4/Zara.jpg",
+    "origin": "Amazon Realm",
+    "type": "Amazonian"
   },
   {
-    "name": "Baraka",
-    "url": "https://mortalkombat.fandom.com/wiki/Baraka",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/4/40/Baraka_%28MK1%29_Render.png"
+    "name": "Zaggot",
+    "url": "https://mortalkombat.fandom.com/wiki/Zaggot",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/2/23/Zaggot.png",
+    "origin": "Chaosrealm",
+    "type": "God"
   },
   {
-    "name": "Baron Reyland",
-    "url": "https://mortalkombat.fandom.com/wiki/Baron_Reyland",
-    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/1/17/Baron_Reyland.png"
+    "name": "Z'dak",
+    "url": "https://mortalkombat.fandom.com/wiki/Z%27dak",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/ca/Zdak.png",
+    "origin": "Outworld"
+  },
+  {
+    "name": "Wynd and Rayne",
+    "url": "https://mortalkombat.fandom.com/wiki/Wynd_and_Rayne",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/97/Wind_and_Rayne.png",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "Wu Lae",
+    "url": "https://mortalkombat.fandom.com/wiki/Wu_Lae",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/c/c1/WuLae.png",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "Wu",
+    "url": "https://mortalkombat.fandom.com/wiki/Wu",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/0b/Wu.png",
+    "origin": "Earthrealm",
+    "type": "Human",
+    "role": "Monk"
+  },
+  {
+    "name": "Wonder Woman",
+    "url": "https://mortalkombat.fandom.com/wiki/Wonder_Woman",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/93/Wonderwoman.jpg",
+    "origin": "DC Universe",
+    "type": "Amazon"
+  },
+  {
+    "name": "Wen the Elder",
+    "url": "https://mortalkombat.fandom.com/wiki/Wen_the_Elder",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/7/73/Wen.png",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "Water God",
+    "url": "https://mortalkombat.fandom.com/wiki/Water_God",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/0/09/MKM_Water_God.png",
+    "origin": "Heaven",
+    "type": "God/Goddess"
+  },
+  {
+    "name": "Vorpax",
+    "url": "https://mortalkombat.fandom.com/wiki/Vorpax",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/8/87/Vorpax.jpg",
+    "origin": "Outworld",
+    "type": "Human"
+  },
+  {
+    "name": "Vera Briggs",
+    "url": "https://mortalkombat.fandom.com/wiki/Vera_Briggs",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/94/GGaIbUN.png",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "Vapor",
+    "url": "https://mortalkombat.fandom.com/wiki/Vapor",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b5/Vapor.png",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "User blog:VampireIllusion/Damon",
+    "url": "https://mortalkombat.fandom.com/wiki/User_blog:VampireIllusion/Damon",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/bf/MK_Vampire_created_Kombatant.jpg"
+  },
+  {
+    "name": "Unit 5",
+    "url": "https://mortalkombat.fandom.com/wiki/Unit_5",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/df/Ladder2_Cyborg_%28MK9%29.png",
+    "origin": "Earthrealm",
+    "type": "Cyborg"
+  },
+  {
+    "name": "Undead General",
+    "url": "https://mortalkombat.fandom.com/wiki/Undead_General",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/d/dd/HUD_IMAGE_08.png"
+  },
+  {
+    "name": "Trooper",
+    "url": "https://mortalkombat.fandom.com/wiki/Trooper",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b3/Special_Forces_Trooper.png",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "Triborg",
+    "url": "https://mortalkombat.fandom.com/wiki/Triborg",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/f/f7/Tri-Borg_MKX_Render.png",
+    "origin": "Special Forces  Blacksite,  Earthrealm",
+    "type": "Cyborg"
+  },
+  {
+    "name": "Torque",
+    "url": "https://mortalkombat.fandom.com/wiki/Torque",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/9/98/Torque.jpg",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "Tormentor",
+    "url": "https://mortalkombat.fandom.com/wiki/Tormentor",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/2/22/Tormentormodel.png"
+  },
+  {
+    "name": "Tomas (Mortal Kombat: Conquest)",
+    "url": "https://mortalkombat.fandom.com/wiki/Tomas_(Mortal_Kombat:_Conquest)",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/3/3c/Tomas.jpg",
+    "origin": "Earthrealm",
+    "type": "Human"
+  },
+  {
+    "name": "Tiamat",
+    "url": "https://mortalkombat.fandom.com/wiki/Tiamat",
+    "image_url": "https://static.wikia.nocookie.net/mkwikia/images/b/b5/Tiamat_pic.png"
   }
 ]

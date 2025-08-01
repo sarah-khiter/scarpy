@@ -191,12 +191,43 @@ body {
 .character-info {
   padding: 20px;
   background: linear-gradient(to bottom, var(--card-bg), var(--darker-bg));
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.character-info h3 {
-  margin: 0 0 15px 0;
+.character-details {
+  background: var(--darker-bg);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9em;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: var(--primary);
+  font-weight: 600;
+  min-width: 80px;
+  text-align: left;
+}
+
+.detail-value {
   color: var(--text-primary);
-  font-size: 1.2em;
+  text-align: right;
+  flex: 1;
+  margin-left: 10px;
 }
 
 .character-link {
@@ -384,7 +415,7 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
-  flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .compare-select-button {

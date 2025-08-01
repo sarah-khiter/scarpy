@@ -1,0 +1,30 @@
+Content-Length: 47806
+X-Request-Id: e098ed6cface8a9f85c271fe7009c1bb
+Accept-Ch: 
+Content-Language: en
+Link: <https://services.fandom.com/icbm/api/config?app=fandomdesktop&compact=true>; rel=preload; as=fetch; crossorigin=anonymous
+Link: <https://api2.amplitude.com/>; rel=preconnect; crossorigin=anonymous
+Content-Security-Policy-Report-Only: script-src 'unsafe-eval' blob: 'self' https: 'self' data: 'unsafe-inline' 'unsafe-eval' blob: 'unsafe-inline' internal-soap.wikia.com internal-soap.fandom.com internal-soap.wikia.org internal-soap.gamepedia.com www.fandom.com www.wikia.com www.wikia.org www.gamepedia.com; default-src 'self' data: blob: https://images.wikia.com https://static.wikia.nocookie.net https: 'self' data: blob: internal-soap.wikia.com internal-soap.fandom.com internal-soap.wikia.org internal-soap.gamepedia.com www.fandom.com www.wikia.com www.wikia.org www.gamepedia.com; style-src 'self' data: blob: https://images.wikia.com https://static.wikia.nocookie.net https: 'self' data: blob: internal-soap.wikia.com internal-soap.fandom.com internal-soap.wikia.org internal-soap.gamepedia.com www.fandom.com www.wikia.com www.wikia.org www.gamepedia.com 'unsafe-inline'; img-src * data: blob:; object-src 'none'; report-uri https://services.fandom.com/csp-logger/csp/ucp; worker-src 'self' blob:
+Nel: {"report_to":"nel","max_age":604800,"include_subdomains":true,"failure_fraction":0.01}
+X-Datacenter: RES
+Content-Security-Policy: upgrade-insecure-requests
+Content-Encoding: br
+Last-Modified: Thu, 31 Jul 2025 09:05:31 GMT
+X-Mobile-App: 0
+X-Ssexp: other
+X-Content-Type-Options: nosniff
+X-Envoy-Upstream-Service-Time: 291
+Report-To: {"group":"nel","max_age":604800,"include_subdomains":true,"endpoints":[{"url":"https://services.fandom.com/browser-errors/report"}]}
+Content-Type: text/html; charset=UTF-8
+X-Cacheable: YES
+Accept-Ranges: bytes
+Age: 20518
+Date: Fri, 01 Aug 2025 14:47:30 GMT
+X-Served-By: cache-iad-kcgs7200030-IAD, cache-iad-kcgs7200030-IAD, cache-par-lfpb1150027-PAR
+X-Cache: MISS, HIT, MISS
+X-Cache-Hits: 0, 1, 0
+X-Timer: S1754059650.316405,VS0,VE99
+Vary: Accept-Encoding, X-Mobile-App, X-Ssexp, Cookie
+Strict-Transport-Security: max-age=300; includeSubDomains
+Server-Timing: dc;desc="res", roaa;desc="active", roaadc;desc="res", roaareason;desc="read_closest", roaavariant;desc="none"
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate

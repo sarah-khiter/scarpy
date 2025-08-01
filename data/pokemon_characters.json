@@ -1,58 +1,14 @@
 [
   {
-    "name": "Character",
-    "url": "https://pokemon.fandom.com/wiki/Character",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/4/40/Red_Let%27s_Go%2C_Pikachu%21_and_Let%27s_Go%2C_Eevee%21.png"
+    "name": "Ogerpon's Trainer",
+    "url": "https://pokemon.fandom.com/wiki/Ogerpon%27s_Trainer",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/c/c2/Ogerponandtrainerwithmask.png"
   },
   {
-    "name": "Bittercold",
-    "url": "https://pokemon.fandom.com/wiki/Bittercold",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/9/9a/PMD3_Bittercold.png"
-  },
-  {
-    "name": "Caroline",
-    "url": "https://pokemon.fandom.com/wiki/Caroline",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/8/87/Caroline.png"
-  },
-  {
-    "name": "Chalce",
-    "url": "https://pokemon.fandom.com/wiki/Chalce",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/0/0d/Chalce.png"
-  },
-  {
-    "name": "Cianwood Greens",
-    "url": "https://pokemon.fandom.com/wiki/Cianwood_Greens",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/f/f9/Tumblr_55b4de66ec9982f6b289d42173ad6721_0735db82_1280.jpg"
-  },
-  {
-    "name": "Cynthia (anime)",
-    "url": "https://pokemon.fandom.com/wiki/Cynthia_(anime)",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/5/56/Cynthia_anime_Journeys.png"
-  },
-  {
-    "name": "Draconid people",
-    "url": "https://pokemon.fandom.com/wiki/Draconid_people",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/f/f2/Draconid_People.jpg"
-  },
-  {
-    "name": "Harry Goodman (Pokémon: Detective Pikachu)",
-    "url": "https://pokemon.fandom.com/wiki/Harry_Goodman_(Pok%C3%A9mon:_Detective_Pikachu)",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/9/96/Harry_Detecttive_Pikachu.png"
-  },
-  {
-    "name": "Ash Ketchum",
-    "url": "https://pokemon.fandom.com/wiki/Ash_Ketchum",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/7/76/Ash_anime_The_Beginning.png"
-  },
-  {
-    "name": "Lucy Stevens",
-    "url": "https://pokemon.fandom.com/wiki/Lucy_Stevens",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/d/d0/Lucy_Stevens_%28Detective_Pikachu_Movie%29.jpg"
-  },
-  {
-    "name": "Name Rater",
-    "url": "https://pokemon.fandom.com/wiki/Name_Rater",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/8/89/Name_Rater_Emerald.png"
+    "name": "Officer Jenny",
+    "url": "https://pokemon.fandom.com/wiki/Officer_Jenny",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/5/53/Indigo_series_jenny.png",
+    "role": "Other Officer Jennys (older sisters/younger sisters/older cousins/younger cousins)"
   },
   {
     "name": "Nimbasa Legends",
@@ -60,24 +16,14 @@
     "image_url": "https://static.wikia.nocookie.net/pokemon/images/1/19/Kodai_Entei_illusion.png"
   },
   {
-    "name": "Officer Jenny",
-    "url": "https://pokemon.fandom.com/wiki/Officer_Jenny",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/5/53/Indigo_series_jenny.png"
+    "name": "Name Rater",
+    "url": "https://pokemon.fandom.com/wiki/Name_Rater",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/8/89/Name_Rater_Emerald.png"
   },
   {
-    "name": "Ogerpon's Trainer",
-    "url": "https://pokemon.fandom.com/wiki/Ogerpon%27s_Trainer",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/c/c2/Ogerponandtrainerwithmask.png"
-  },
-  {
-    "name": "Sunflora (Mystery Dungeon)",
-    "url": "https://pokemon.fandom.com/wiki/Sunflora_(Mystery_Dungeon)",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/f/fa/0192Sunflora_Pokemon_Mystery_Dungeon_Explorers_of_Sky.png"
-  },
-  {
-    "name": "Team Skull (Mystery Dungeon)",
-    "url": "https://pokemon.fandom.com/wiki/Team_Skull_(Mystery_Dungeon)",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/4/46/MD_2_Team_Skull_art.jpg"
+    "name": "Unknown Shinx team",
+    "url": "https://pokemon.fandom.com/wiki/Unknown_Shinx_team",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/2/28/Baccer_scoreboard_credits.png"
   },
   {
     "name": "Tim Goodman (Pokémon: Detective Pikachu)",
@@ -85,8 +31,68 @@
     "image_url": "https://static.wikia.nocookie.net/pokemon/images/b/b0/Tim_Goodman_pel%C3%ADcula.png"
   },
   {
-    "name": "Unknown Shinx team",
-    "url": "https://pokemon.fandom.com/wiki/Unknown_Shinx_team",
-    "image_url": "https://static.wikia.nocookie.net/pokemon/images/2/28/Baccer_scoreboard_credits.png"
+    "name": "Team Skull (Mystery Dungeon)",
+    "url": "https://pokemon.fandom.com/wiki/Team_Skull_(Mystery_Dungeon)",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/4/46/MD_2_Team_Skull_art.jpg"
+  },
+  {
+    "name": "Sunflora (Mystery Dungeon)",
+    "url": "https://pokemon.fandom.com/wiki/Sunflora_(Mystery_Dungeon)",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/f/fa/0192Sunflora_Pokemon_Mystery_Dungeon_Explorers_of_Sky.png",
+    "type": "Base article"
+  },
+  {
+    "name": "Lucy Stevens",
+    "url": "https://pokemon.fandom.com/wiki/Lucy_Stevens",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/d/d0/Lucy_Stevens_%28Detective_Pikachu_Movie%29.jpg"
+  },
+  {
+    "name": "Ash Ketchum",
+    "url": "https://pokemon.fandom.com/wiki/Ash_Ketchum",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/7/76/Ash_anime_The_Beginning.png",
+    "role": "Professor Oak Gary Pikachu Misty Brock Tracey May Max Dawn Iris Cilan Clemont Bonnie Serena  (Childhood) Lana Kiawe Lillie Sophocles Mallow Professor Kukui  (caretaker) Professor Burnet  (caretaker) Goh Lei Chloe"
+  },
+  {
+    "name": "Harry Goodman (Pokémon: Detective Pikachu)",
+    "url": "https://pokemon.fandom.com/wiki/Harry_Goodman_(Pok%C3%A9mon:_Detective_Pikachu)",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/9/96/Harry_Detecttive_Pikachu.png"
+  },
+  {
+    "name": "Draconid people",
+    "url": "https://pokemon.fandom.com/wiki/Draconid_people",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/f/f2/Draconid_People.jpg"
+  },
+  {
+    "name": "Cynthia (anime)",
+    "url": "https://pokemon.fandom.com/wiki/Cynthia_(anime)",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/5/56/Cynthia_anime_Journeys.png",
+    "role": "Professor Carolina  (grandmother)"
+  },
+  {
+    "name": "Cianwood Greens",
+    "url": "https://pokemon.fandom.com/wiki/Cianwood_Greens",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/f/f9/Tumblr_55b4de66ec9982f6b289d42173ad6721_0735db82_1280.jpg"
+  },
+  {
+    "name": "Chalce",
+    "url": "https://pokemon.fandom.com/wiki/Chalce",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/0/0d/Chalce.png",
+    "role": "Female"
+  },
+  {
+    "name": "Caroline",
+    "url": "https://pokemon.fandom.com/wiki/Caroline",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/8/87/Caroline.png"
+  },
+  {
+    "name": "Bittercold",
+    "url": "https://pokemon.fandom.com/wiki/Bittercold",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/9/9a/PMD3_Bittercold.png",
+    "type": "Base article"
+  },
+  {
+    "name": "Character",
+    "url": "https://pokemon.fandom.com/wiki/Character",
+    "image_url": "https://static.wikia.nocookie.net/pokemon/images/4/40/Red_Let%27s_Go%2C_Pikachu%21_and_Let%27s_Go%2C_Eevee%21.png"
   }
 ]

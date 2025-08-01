@@ -90,54 +90,101 @@ class FandomSpider(scrapy.Spider):
             if self.character_count >= self.character_limit:
                 return
             
-            # Extraction des données du personnage directement depuis la liste
-            character = CharacterItem()
-            
-            # Nom du personnage
+            # Extraction des données de base du personnage
             name = item.css('.category-page__member-link::text').get()
             if not name:
                 continue
-            character['name'] = name.strip()
             
-            # URL du personnage
             char_url = item.css('.category-page__member-link::attr(href)').get()
             if char_url:
-                character['url'] = urljoin(response.url, char_url)
-            
-            # Image du personnage
-            image_url = item.css('.category-page__member-thumbnail::attr(src)').get()
-            if not image_url:
-                image_url = item.css('.category-page__member-thumbnail::attr(data-src)').get()
-            
-            if image_url:
-                cleaned_url = self.clean_image_url(image_url)
-                if cleaned_url:
-                    character['image_url'] = cleaned_url
-                    self.character_count += 1
-                    
-                    # Convertir l'item en dictionnaire et l'ajouter à la liste
-                    item_dict = dict(character)
-                    self.items.append(item_dict)
-                    
-                    # Sauvegarder après chaque nouvel item
-                    self.save_items()
-                    
-                    print("\n" + "="*50)
-                    print(f"Character #{self.character_count}/{self.character_limit}: {character['name']}")
-                    print(f"URL: {character['url']}")
-                    print(f"Image: {character['image_url']}")
-                    print(f"Sauvegardé dans : {self.json_file}")
-                    print("="*50)
-                    
-                    if self.character_count >= self.character_limit:
-                        print(f"\nLimite de {self.character_limit} personnages atteinte!")
-                    
-                    yield character
+                absolute_url = urljoin(response.url, char_url)
+                # Créer un dictionnaire pour stocker les informations de base
+                character_info = {
+                    'name': name.strip(),
+                    'url': absolute_url,
+                }
+                
+                # Image du personnage
+                image_url = item.css('.category-page__member-thumbnail::attr(src)').get()
+                if not image_url:
+                    image_url = item.css('.category-page__member-thumbnail::attr(data-src)').get()
+                if image_url:
+                    character_info['image_url'] = self.clean_image_url(image_url)
+                
+                # Suivre le lien vers la page du personnage
+                yield response.follow(
+                    absolute_url,
+                    self.parse_character_page,
+                    cb_kwargs={'character_info': character_info}
+                )
 
         # Vérifie s'il y a une page suivante
         next_page = response.css('a.category-page__pagination-next::attr(href)').get()
         if next_page and self.character_count < self.character_limit:
             yield response.follow(next_page, self.parse_character_list)
+
+    def parse_character_page(self, response, character_info):
+        if self.character_count >= self.character_limit:
+            return
+
+        character = CharacterItem()
+        character.update(character_info)
+
+        # Recherche des informations dans l'infobox ou les sections pertinentes
+        infobox = response.css('.portable-infobox')
+        if infobox:
+            # Parcourir tous les labels de l'infobox
+            labels = infobox.css('.pi-data-label')
+            values = infobox.css('.pi-data-value')
+            for label, value in zip(labels, values):
+                label_text = label.css('::text').get('').strip().lower()
+                value_text = ' '.join(value.css('::text').getall()).strip()
+
+                # Mapper les labels aux champs correspondants
+                if any(keyword in label_text for keyword in ['type', 'espèce', 'race', 'species']):
+                    character['type'] = value_text
+                elif any(keyword in label_text for keyword in ['role', 'occupation', 'métier', 'job']):
+                    character['role'] = value_text
+                elif any(keyword in label_text for keyword in ['class', 'classe']):
+                    character['class_name'] = value_text
+                elif any(keyword in label_text for keyword in ['origin', 'origine', 'from', 'birthplace']):
+                    character['origin'] = value_text
+
+        # Si l'image n'a pas été trouvée dans la liste, essayer de la trouver sur la page
+        if 'image_url' not in character:
+            image_url = response.css('.pi-image-thumbnail::attr(src)').get()
+            if image_url:
+                character['image_url'] = self.clean_image_url(image_url)
+
+        if 'image_url' in character:
+            self.character_count += 1
+            
+            # Convertir l'item en dictionnaire et l'ajouter à la liste
+            item_dict = dict(character)
+            self.items.append(item_dict)
+            
+            # Sauvegarder après chaque nouvel item
+            self.save_items()
+            
+            print("\n" + "="*50)
+            print(f"Character #{self.character_count}/{self.character_limit}: {character['name']}")
+            print(f"URL: {character['url']}")
+            print(f"Image: {character['image_url']}")
+            if character.get('type'):
+                print(f"Type: {character['type']}")
+            if character.get('role'):
+                print(f"Role: {character['role']}")
+            if character.get('class_name'):
+                print(f"Class: {character['class_name']}")
+            if character.get('origin'):
+                print(f"Origin: {character['origin']}")
+            print(f"Sauvegardé dans : {self.json_file}")
+            print("="*50)
+            
+            if self.character_count >= self.character_limit:
+                print(f"\nLimite de {self.character_limit} personnages atteinte!")
+            
+            yield character
 
     def closed(self, reason):
         # Sauvegarde finale

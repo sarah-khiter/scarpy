@@ -10,3 +10,7 @@ class CharacterItem(scrapy.Item):
     name = scrapy.Field()
     url = scrapy.Field()
     image_url = scrapy.Field()
+    type = scrapy.Field()
+    role = scrapy.Field()
+    class_name = scrapy.Field()
+    origin = scrapy.Field()
